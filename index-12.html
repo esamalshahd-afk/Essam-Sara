@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essam & Sara ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,sans-serif;background:linear-gradient(135deg,#fff7fa,#ffe8f0,#fff);color:#3b202b}button{font-family:inherit}
+.lock{position:fixed;inset:0;background:radial-gradient(circle at 50% 35%,#ffe1eb,#fff7fa 60%,#ffdbe7);display:flex;align-items:center;justify-content:center;text-align:center;z-index:99;padding:25px}.lock-card{max-width:430px;width:100%;padding:42px 28px;border-radius:32px;background:#ffffffd9;backdrop-filter:blur(12px);box-shadow:0 20px 60px #9d456420;border:1px solid #fff}.lock-heart{font-size:65px;animation:pulse 1.7s infinite}.lock h1{font-family:'Playfair Display',serif;font-size:42px;margin:10px 0;color:#a54868;direction:ltr}.lock p{line-height:1.9;color:#805265}.enter{border:0;background:#a54868;color:#fff;padding:14px 28px;border-radius:30px;font-size:16px;cursor:pointer;box-shadow:0 10px 25px #a5486840}
+.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.h1{font-family:'Playfair Display',serif;font-size:clamp(50px,12vw,95px);direction:ltr}.subtitle{font-size:20px;color:#805265}.date{display:inline-block;background:#fff;padding:10px 22px;border-radius:30px;box-shadow:0 8px 25px #d88aa533;color:#a54868}
+section{max-width:1050px;margin:auto;padding:60px 20px}.title{text-align:center;font-size:32px;margin-bottom:28px;color:#7d3f55}.card{background:#ffffffc7;backdrop-filter:blur(8px);border:1px solid #fff;border-radius:25px;padding:28px;box-shadow:0 15px 40px #b34d7020}.message{font-size:18px;line-height:2.1;text-align:center}
+.counter{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.box{background:#fff;border-radius:18px;padding:17px 8px;text-align:center;box-shadow:0 8px 25px #b34d7018}.num{font-size:28px;font-weight:700;color:#a54868}.label{font-size:12px;color:#8b6875}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery figure{margin:0;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #b34d7018}.gallery img{width:100%;height:260px;object-fit:cover;display:block}.gallery figcaption{padding:10px;text-align:center;color:#805265;font-size:13px}.empty{text-align:center;color:#8b6875;line-height:1.8}
+.audio{text-align:center}.audio audio{max-width:100%}.timeline{display:grid;gap:16px}.item{border-right:4px solid #d77897;padding:10px 20px}.item h3{color:#a54868;margin:0 0 5px}.secret{display:none;text-align:center;font-size:18px;line-height:2}.show{display:block}footer{text-align:center;padding:45px;color:#956879}
+@keyframes pulse{50%{transform:scale(1.08)}}@media(max-width:750px){.counter{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:190px}}@media(max-width:430px){.gallery img{height:155px}.message{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="lock" id="lock"><div class="lock-card"><div class="lock-heart">❤️</div><h1>Welcome, Sara</h1><p>عملتلك مكان صغير يجمع أحلى ذكرياتنا.<br>جاهزة ندخل حكايتنا؟</p><button class="enter" onclick="enterStory()">Enter Our Story ❤️</button></div></div>
+
+<header class="hero"><main><div class="h1">Essam <span style="color:#d77897">&</span> Sara</div><p class="subtitle">Our little world of memories ❤️</p><div class="date">Since 16 / 08 / 2025</div></main></header>
+
+<section><h2 class="title">Happy 1st Anniversary 🎉</h2><div class="card message">
+<p><strong>Sara ❤️</strong></p>
+<p>سنة كاملة عدّت من يوم ما بدأت حكايتنا. سنة فيها ضحك وذكريات ومواقف كتير، وكل لحظة فيها كانت بتضيف حاجة جديدة لحكايتنا.</p>
+<p>أجمل حاجة مش إن سنة عدّت، لكن إننا عشناها سوا، وكل ذكرى صغيرة بقت جزء من قصة كبيرة بتاعتنا.</p>
+<p>أتمنى إن السنة دي تكون مجرد أول فصل من فصول كتير لسه هنكتبها سوا، ونفضل دايمًا نرجع هنا ونفتكر كل اللحظات اللي جمعتنا.</p>
+<p><strong>كل سنة وإنتِ في حياتي، وكل سنة وحكايتنا أحلى من اللي قبلها. ❤️</strong></p>
+</div></section>
+
+<section><h2 class="title">حكايتنا بالأرقام ⏳</h2><div class="card"><div class="counter">
+<div class="box"><div class="num" id="years">0</div><div class="label">سنة</div></div><div class="box"><div class="num" id="months">0</div><div class="label">شهر</div></div><div class="box"><div class="num" id="days">0</div><div class="label">يوم</div></div><div class="box"><div class="num" id="hours">0</div><div class="label">ساعة</div></div><div class="box"><div class="num" id="minutes">0</div><div class="label">دقيقة</div></div><div class="box"><div class="num" id="seconds">0</div><div class="label">ثانية</div></div>
+</div></div></section>
+
+<section><h2 class="title">ذكرياتنا 📸</h2><div class="card"><div id="gallery" class="gallery"></div><div id="emptyGallery" class="empty">أول ما ترفع صوركم داخل مجلد <b>photos</b> في GitHub، هتظهر هنا تلقائيًا ❤️<br>تقدر تضيف صور كتير من غير ما تعدّل الكود.</div></div></section>
+
+<section><h2 class="title">أغنيتنا 🎵</h2><div class="card audio"><p><strong>ياللي الغرام لغيرك حرام</strong></p><p style="color:#8b6875">ارفع ملف الأغنية باسم <b>song.mp3</b> داخل مجلد <b>music</b> في GitHub.</p><audio id="song" controls preload="metadata"><source src="music/song.mp3" type="audio/mpeg"></audio></div></section>
+
+<section><h2 class="title">محطات من حكايتنا ✨</h2><div class="timeline"><div class="card item"><h3>16 / 08 / 2025 ❤️</h3><p>اليوم اللي بدأت فيه حكاية Essam و Sara.</p></div><div class="card item"><h3>أول سنة 🎉</h3><p>سنة كاملة من الذكريات، ولسه في ذكريات كتير جاية.</p></div><div class="card item"><h3>والباقي لسه بيتكتب...</h3><p>كل صورة جديدة وموقف جديد يقدر يبقى فصل جديد في حكايتنا.</p></div></div></section>
+
+<section><div class="card secret"><h2 class="title">رسالة سرية لسارة 💌</h2><p>لو وصلتي لهنا، فدي علامة إن كل التفاصيل الصغيرة اللي في الموقع ده معمولة مخصوص عشان تفضل حكايتنا موجودة قدامنا مهما عدّى وقت. ❤️</p><p><strong>— Essam</strong></p></div><button class="enter" style="display:block;margin:20px auto" onclick="document.querySelector('.secret').classList.toggle('show')">افتحي الرسالة السرية 💌</button></section>
+<footer>Made with ❤️ by Essam for Sara</footer>
+
+<script>
+const start=new Date("2025-08-16T00:00:00");
+function updateCounter(){const now=new Date();let years=now.getFullYear()-start.getFullYear();let anniversary=new Date(start);anniversary.setFullYear(start.getFullYear()+years);if(now<anniversary){years--;anniversary=new Date(start);anniversary.setFullYear(start.getFullYear()+years)}let months=now.getMonth()-anniversary.getMonth();if(months<0)months+=12;let monthDate=new Date(anniversary);monthDate.setMonth(anniversary.getMonth()+months);if(monthDate>now){months--;monthDate=new Date(anniversary);monthDate.setMonth(anniversary.getMonth()+months)}let diff=Math.max(0,now-monthDate);const days=Math.floor(diff/86400000);diff%=86400000;const hours=Math.floor(diff/3600000);diff%=3600000;const minutes=Math.floor(diff/60000);const seconds=Math.floor((diff%60000)/1000);[years,months,days,hours,minutes,seconds].forEach((v,i)=>document.getElementById(["years","months","days","hours","minutes","seconds"][i]).textContent=v)}
+function enterStory(){document.getElementById("lock").style.display="none";document.getElementById("song").play().catch(()=>{})}
+updateCounter();setInterval(updateCounter,1000);
+async function loadGallery(){const url="https://api.github.com/repos/esamalshahd-afk/Essam-Sara/contents/photos";try{const r=await fetch(url);if(!r.ok)return;const files=await r.json();const images=files.filter(f=>f.type==="file"&&/\.(jpg|jpeg|png|webp|gif)$/i.test(f.name));if(images.length){document.getElementById("emptyGallery").style.display="none";const g=document.getElementById("gallery");images.forEach(f=>{const fig=document.createElement("figure");fig.innerHTML=`<img src="${f.download_url}" alt="ذكرى ❤️"><figcaption>${f.name.replace(/\.[^.]+$/,"")}</figcaption>`;g.appendChild(fig)})}}catch(e){}}
+loadGallery();
+</script>
+</body></html>
